@@ -1,6 +1,23 @@
 # django-authentication
 Session Based authentication
 
+
+pip install django djangorestframework
+
+pip install -U djoser
+pip install django-cors-headers
+
+django-admin startproject config . 
+
+python manage.py startapp todo
+
+change the setting
+
+'todo',
+    'rest_framework',
+    'djoser',
+    'rest_framework.authtoken',
+
 ```
 python -m venv env
 env\Scripts\activate
