@@ -18,6 +18,30 @@ change the setting
     'djoser',
     'rest_framework.authtoken',
 
+
+add this in urls.py
+
+path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
+
+add this to the end of settings.py
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
+follow this website
+
+https://pypi.org/project/django-cors-headers/
+
+
+VUE
+
+npm install -g @vue/cli
+
+vue create frontend
 ```
 python -m venv env
 env\Scripts\activate
